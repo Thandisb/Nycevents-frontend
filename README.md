@@ -1,8 +1,22 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# NYC Event Frontend App
+This is the frontend application for the NYC event management system. It provides a user interface for viewing and interacting with events in New York City.
 
-Currently, two official plugins are available:
+## Features
+Event Listing: View a list of upcoming events in New York City.
+Event Details: View detailed information about each event, including date, location, and description.
+Update Event: edit events by date, location, or keyword.
+Create new Events
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technology Used
+React: Frontend library for building user interfaces.
+React Router: Library for handling routing in React applications.
+Axios: Library for making HTTP requests to the backend API.
+Bootstrap.
+
+
+
+
+
+
+
