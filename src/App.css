@@ -1,42 +1,230 @@
+html, 
+body,
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+}
+
+.App{
+  height: 100vh;
+}
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(68, 63, 110);
+    height: 75px;
+    padding: 20px;
+    /* width: 10000px; */
+  
+  }
+
+  .logo{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+
+  }
+  
+  .link {
+    font-size: 25px;
+    font-style: bold;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+
+    padding-bottom: 10px;
+    padding-top: 30px;
+
+  }
+  
+  .nav-container ul {
+    display: flex;
+    list-style-type: none;
+  
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  /* .nav-container ul li {
+    display: inline;
+    float: left;
+  } */
+
+  .nav-link{
+    margin-left: 15px;
+    margin-top: 60px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    height: 100px;
+    
+    /* padding: 8px 10px; */
+  }
+
+  .events{
+    /* margin: auto; */
+    padding-left: 80px;
+  }
+
+  .events-form-container {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 20px;
+    background-color:  lightgray;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px rgb(55, 55, 55);
+  }
+  
+  .events-form-container h3 {
+    text-align: center;
+  }
+  
+  .events-form-input {
+    /* margin-bottom: 20px; */
+    margin-top: 20px;
+  }
+  
+  .events-form-input label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .events-form-input input[type="text"],
+  .events-form-input input[type="file"],
+  .events-form-input textarea,
+  .events-form-input select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  .events-form-input textarea {
+    resize: vertical;
+  }
+  
+  .events-form-input button {
+    padding: 8px 12px;
+    background-color: rgb(68, 63, 110);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .events-form-input button:hover {
+    background-color: rgb(68, 63, 110);
+  }
+  
+  .select-event-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  .pageNumbers-container {
+    padding-top: 50px;
+    justify-content: center;
+    width: 100%;
+}
+.pageNumbers {
+    list-style: none;
+    display: flex;
+}
+
+.pageNumbers li {
+    padding: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.pageNumbers li.active {
+    background-color: white;
+    color: rgb(68, 63, 110);
+}
+
+.pageNumbers li button {
+    background-color: transparent;
+    border: none;
+    font-size: 1 rem;
+    cursor: pointer;
+}
+.pageNumbers li button:hover {
+    background-color: rgb(68, 63, 110);
+    color: white;
+    border-radius: 0.75rem;
+}
+.pageNumbers li button:focus {
+    outline: none;
+  }
+  .card-body{
+    align-items: center;
+  }
+  .eventBtn{
+    font-size: 14px;
+    padding: 10px;
+    margin: 7px;
+    background: rgb(68, 63, 110);
+    color: white;
+    font-weight: 100;
+    border-radius: .3rem;
+  }
+  .eventBtn:hover{
+    background-color: white;
+    color: rgb(68, 63, 110);
+  }
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(68, 63, 110);
   text-align: center;
+  color: white;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.footer-logo{
+  display: flex;
+  align-items: center;
+  /* margin-left: 5px; */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-copy{
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.footer-social{
+       display: flex;
+        justify-content: center;
+        margin-top: 10px;
 }
 
-.card {
-  padding: 2em;
+.footer-icon-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  margin: 5px;
 }
 
-.read-the-docs {
-  color: #888;
-}
